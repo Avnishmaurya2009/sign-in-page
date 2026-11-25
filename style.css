@@ -288,37 +288,29 @@ html, body {
     box-sizing: border-box;
 }
 
-/* LOGIN FORM RESPONSIVE */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 900px) {
-
-    .form {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-
-        width: 280px;
-        max-width: 100%;
-        height: auto;
-
-        margin: 40px auto;
+    .search {
+        display: flex;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 10px;
         box-sizing: border-box;
     }
 
-    .form h2 {
-        width: 100%;
+    .srch {
+        width: 70%;
+        float: none;
         box-sizing: border-box;
     }
 
-    .form input {
-        width: 100%;
+    .btn {
+        width: 30%;
+        float: none;
         box-sizing: border-box;
-    }
-
-    .btnn {
-        width: 100%;
-        box-sizing: border-box;
+        margin-top: 13px;
+        flex-shrink: 0;
     }
 
 }
+
