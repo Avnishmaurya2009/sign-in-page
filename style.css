@@ -5,9 +5,12 @@
 }
 .main{
     width: 100%;
+    min-height: 100vh;
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(1.jpg);
     background-position: center;
-    height: 109vh;
+    height: auto;
+    background-size: cover;
+    background-report: no-report;
 }
 .navbar{
     width: 1200px;
@@ -262,4 +265,48 @@ ul li a:hover{
 
 .icon ion-icon:hover{
     color: #ff7200;
+}
+/* SCREEN WIDTH FIX */
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar,
+.content {
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar,
+    .content {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .search {
+        margin-left: 0;
+        width: 100%;
+    }
 }
