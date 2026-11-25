@@ -288,25 +288,37 @@ html, body {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
+/* LOGIN FORM RESPONSIVE */
 
-    .main {
-        width: 100%;
-        min-height: 100vh;
+@media screen and (max-width: 900px) {
+
+    .form {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+
+        width: 280px;
+        max-width: 100%;
         height: auto;
-        background-size: cover;
-        background-position: center;
+
+        margin: 40px auto;
+        box-sizing: border-box;
     }
 
-    .navbar,
-    .content {
+    .form h2 {
         width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        box-sizing: border-box;
     }
 
-    .search {
-        margin-left: 0;
+    .form input {
         width: 100%;
+        box-sizing: border-box;
     }
+
+    .btnn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
 }
