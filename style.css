@@ -288,28 +288,176 @@ html, body {
     box-sizing: border-box;
 }
 
+
+/* FULL MOBILE RESPONSIVE DESIGN */
+
 @media screen and (max-width: 768px) {
 
-    .search {
+    /* MAIN BACKGROUND */
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        width: 100%;
+        height: auto;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* MENU */
+    .menu {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    ul {
+        float: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    ul li {
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    /* SEARCH BOX */
+    .search {
         width: 100%;
         margin: 10px 0;
-        padding: 0 10px;
-        box-sizing: border-box;
+        float: none;
+        display: flex;
+        justify-content: center;
     }
 
     .srch {
-        width: 70%;
+        width: 60%;
         float: none;
+    }
+
+    
+
+    /* CONTENT */
+    .content {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .content h1 {
+        font-size: 32px;
+        margin-top: 25px;
+        padding-left: 0;
+        letter-spacing: 1px;
+    }
+
+    .content span {
+        font-size: 38px;
+    }
+
+    .content .par {
+        padding-left: 0;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .content .par br {
+        display: none;
+    }
+
+    .content .cn {
+        margin-left: 0;
+    }
+
+    /* LOGIN FORM */
+    .form {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 280px;
+        max-width: 100%;
+        height: auto;
+        margin: 35px auto;
         box-sizing: border-box;
     }
 
-    .btn {
-        width: 30%;
-        float: none;
+    .form h2 {
+        width: 100%;
         box-sizing: border-box;
-        margin-top: 13px;
-        flex-shrink: 0;
+    }
+
+    .form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btnn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* SOCIAL ICONS */
+    .form .icon {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .form .icon a {
+        padding: 5px;
+    }
+
+}
+
+/* EXTRA SMALL MOBILE */
+
+@media screen and (max-width: 380px) {
+
+    .content h1 {
+        font-size: 27px;
+    }
+
+    .content span {
+        font-size: 32px;
+    }
+
+    .content .par {
+        font-size: 13px;
+    }
+
+    ul li {
+        margin: 7px;
+        font-size: 11px;
+    }
+
+    .form {
+        width: 100%;
     }
 
 }
